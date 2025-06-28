@@ -154,7 +154,7 @@ fun BoxesGame(onBackClick: () -> Unit) {
                 verticalAlignment = Alignment.CenterVertically
             ) {
                 Button(
-                    onClick = { playDelay = 6000L },
+                    onClick = { playDelay = 1000L },
                     colors = ButtonDefaults.buttonColors(containerColor = Color(0xFFFFEB3B)),
                     modifier = Modifier.weight(1f)
                 ) {
@@ -162,7 +162,7 @@ fun BoxesGame(onBackClick: () -> Unit) {
                 }
                 Spacer(modifier = Modifier.width(8.dp))
                 Button(
-                    onClick = { playDelay = 10000L },
+                    onClick = { playDelay = 3000L },
                     colors = ButtonDefaults.buttonColors(containerColor = Color.Gray),
                     modifier = Modifier.weight(1f)
                 ) {
