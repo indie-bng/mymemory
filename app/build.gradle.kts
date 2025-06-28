@@ -2,14 +2,15 @@ plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.kotlin.android)
     alias(libs.plugins.kotlin.compose)
+    alias(libs.plugins.google.gms.google.services)
 }
 
 android {
-    namespace = "com.example.memoirs"
+    namespace = "com.kdas.memoirs"
     compileSdk = 35
 
     defaultConfig {
-        applicationId = "com.example.memoirs"
+        applicationId = "com.kdas.memoirs"
         minSdk = 24
         targetSdk = 35
         versionCode = 1
@@ -49,6 +50,8 @@ dependencies {
     implementation(libs.androidx.ui.graphics)
     implementation(libs.androidx.ui.tooling.preview)
     implementation(libs.androidx.material3)
+    implementation("nl.dionsegijn:konfetti-compose:2.0.5")
+    implementation(libs.firebase.firestore)
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)

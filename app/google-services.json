@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "473558791258",
+    "project_id": "games-25-9814d",
+    "storage_bucket": "games-25-9814d.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:473558791258:android:d415235d4131dd6fd41463",
+        "android_client_info": {
+          "package_name": "com.kdas.memoirs"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBTQVh9zM2d_eLofSDkxtWYnkdMXqHUDEo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
