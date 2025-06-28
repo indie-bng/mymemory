@@ -47,12 +47,16 @@ fun GameApp() {
     when (currentScreen) {
         "main" -> MainScreen(
             onColoursClick = { currentScreen = "colours" },
-            onFlagsClick = { currentScreen = "flags" }
+            onFlagsClick = { currentScreen = "flags" },
+            onBoxesClick = { currentScreen = "boxes" }
         )
         "colours" -> ColourGame(
             onBackClick = { currentScreen = "main" }
         )
         "flags" -> FlagGame(
+            onBackClick = { currentScreen = "main" }
+        )
+        "boxes" -> BoxesGame(
             onBackClick = { currentScreen = "main" }
         )
     }
@@ -61,7 +65,8 @@ fun GameApp() {
 @Composable
 fun MainScreen(
     onColoursClick: () -> Unit,
-    onFlagsClick: () -> Unit
+    onFlagsClick: () -> Unit,
+    onBoxesClick: () -> Unit
 ) {
     Column(
         horizontalAlignment = Alignment.CenterHorizontally,
@@ -95,6 +100,17 @@ fun MainScreen(
             colors = ButtonDefaults.buttonColors(containerColor = Color(0xFF64B5F6))
         ) {
             Text("FLAGS", fontSize = 20.sp, color = Color.White)
+        }
+        
+        Button(
+            onClick = onBoxesClick,
+            modifier = Modifier
+                .width(200.dp)
+                .height(100.dp)
+                .padding(16.dp),
+            colors = ButtonDefaults.buttonColors(containerColor = Color(0xFF81C784))
+        ) {
+            Text("BOXES", fontSize = 20.sp, color = Color.White)
         }
     }
 } 
